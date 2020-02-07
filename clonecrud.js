@@ -3,7 +3,7 @@ const recursive = require("recursive-readdir");
 const path = require('path');
 const fs = require('fs');
 
-if (argv.length !== 6) {
+if (process.argv.length !== 7) {
   console.error('Usage npx clonecrud oldname oldName newname newName .js');
   process.exit(0);
 }
@@ -15,7 +15,6 @@ const newname = process.argv[4];
 const newName = process.argv[5];
 const fileEnding = process.argv[6];
 const currentPath = path.resolve(".");
-
 
 recursive(currentPath, function (err, files) {
   files = files.filter(x => x.endsWith(fileEnding));
