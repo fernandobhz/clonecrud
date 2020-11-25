@@ -31,7 +31,7 @@ const old_name = camelCaseToSnakeCase(oldName);
 const new_name = camelCaseToSnakeCase(newName);
 
 const old__name = camelCaseToKebabCase(oldName);
-const new__new = camelCaseToKebabCase(newName);
+const new__name = camelCaseToKebabCase(newName);
 
 recursive(currentPath, function (err, files) {
   files = files.filter((x) => x.endsWith(fileEnding));
