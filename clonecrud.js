@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 if (process.argv.length !== 5) {
-  console.error("Usage npx clonecrud oldName newName .js");
+  console.error("Usage npx clonecrud oldName newName .ext");
   console.log("Received: ", process.argv);
   process.exit(0);
 }
